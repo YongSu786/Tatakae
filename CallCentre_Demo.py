@@ -1,8 +1,8 @@
 Call_queue=[]
 print("*************Welcome To Call Centre Queue System***********************")
 while True :
-	print(""" 1.] Add a Call
-		  2.] Exit""")
+	print("1.] Add a Call")
+	print(" 2.] Answer Next ")
 
 	choice = input("Enter Your Choice:")
 	if choice =="1":
@@ -12,12 +12,12 @@ while True :
 		Call_queue.append(Call)
 		print("Call Added.")
 	elif choice == "2":
-		if Call_queue.pop(0)
-			print("Answered Call:"Call["id"],"Time:",Call["Time"],"Minutes")
+		if Call_queue:
+			Call=Call_queue.pop(0)
+			print("Answered Call:",Call["id"],"Time:",Call["Time"],"Minutes")
 		else:
 			print("No Calls to Answer.")
-		print("Ans
-		print("GoodBye!")
-		break
 	else:
-		print("Invalid Choice.")
+			print("Invalid Choice.")
+			print("GoodBye!")
+			break
